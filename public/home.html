@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--boostrap-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<title>SkyDynamics - check weather & Aqi</title>
+<!--google fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap" rel="stylesheet">
+
+ <!-- font awesome-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css"
+		integrity="sha512-siarrzI1u3pCqFG2LEzi87McrBmq6Tp7juVsdmGY1Dr8Saw+ZBAzDzrGwX3vgxX1NkioYNCFOVC0GpDPss10zQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+		integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+	</head>
+<body>
+     <div class="bg-image">
+		<nav class="navbar bg-transparent fixed-top">
+			<div class="container-fluid">
+				<a class="navbar-brand" id="fade-in-heading" style="color: white; font-weight: bold;  text-shadow: 1px 1px 1px black;"><i class="fa-solid fa-temperature-half fa-lg"></i> SkyDynamics</a>
+			  <button class="navbar-toggler bg-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+				<div class="offcanvas-header">
+				  <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><i class="fa-solid fa-link"></i> Navigation</h5>
+				  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+				</div>
+				<div class="offcanvas-body">
+				  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+					<li class="nav-item">
+					  <a class="nav-link active" aria-current="page" href="#"> <i class="fa-solid fa-house"></i> Home</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="#">About</a>
+					</li>
+					<li class="nav-item dropdown">
+					  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						Dropdown
+					  </a>
+					  <ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="#">FAQ</a></li>
+						<li><a class="dropdown-item" href="https://github.com/nikhilkcodes"><i class="fa-brands fa-github"></i> About Creator</a></li>
+						<li>
+						  <hr class="dropdown-divider">
+						</li>
+						<li><a class="dropdown-item" href="#"><i class="fa-solid fa-code-fork"></i> Contribute</a></li>
+					  </ul>
+					</li>
+				  </ul>
+				<p style="margin-top: 190%;">Made with ❤️ in India by Nikhil Singh</p>
+				<a href="https://twitter.com/mainikhilhun"><i class="fa-brands fa-x-twitter"></i></a>
+				  <a href="https://www.linkedin.com/in/nikhil-singh-in/"><i class="fa-brands fa-linkedin"></i></a>
+				</div>
+			  </div>
+			</div>
+		  </nav>
+        <h3 style="text-align: center; font-weight: bold; color: white; justify-content: center; text-shadow: 1px 1px 1px black; position: relative;">Search</h3>
+		<form action="" class="search-bar">
+			<input type="search" name="search" pattern=".*\S.*" required>
+			<button class="search-btn" type="submit">
+				<span>Search</span>
+			</button>
+		</form>
+	</div>
+	<br>
+	<div class='wrapper'>
+		<div class='widget'>
+		  <div>
+			<img id="" src="" alt="weatherImg">
+			<div class='degree'></div>
+			<br>
+			<div class='country'></div>
+			<br>
+			<div class='dynamic' style="font-weight: bold;">AQI</div>
+		  </div>
+		</div>
+	  </div>
+<script src="script.js"></script>
+</body>
+
+</html>
